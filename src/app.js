@@ -38,11 +38,11 @@ const comparador = (eleccionJugador) => {
     if (eleccionJugador === eleccionWord) console.log("empate");
     
     else if (rules[eleccionJugador].includes(eleccionWord)) console.log("ganaste");
-    else console.log("perdiste");
-    
-    
+    else console.log("perdiste");   
+ 
     
 };
+
 comparador("paper")
 
 // console.log(rules["paper"]);
