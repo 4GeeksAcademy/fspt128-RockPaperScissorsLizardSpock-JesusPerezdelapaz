@@ -30,20 +30,24 @@ const eleccionComputador = () => {
 };
 
 const comparador = (eleccionJugador) => {
+
+    if (!choices.includes(eleccionJugador)) {
+      console.log("escoge alguna opción correcta: " + choices)
+      return
+    }
+        
     let eleccionWord = eleccionComputador() ;
     console.log("has escogido: " + eleccionJugador);
-    console.log("La máquina ha escogido: " + eleccionWord);
-    
+    console.log("La máquina ha escogido: " + eleccionWord);    
     
     if (eleccionJugador === eleccionWord) console.log("empate");
     
     else if (rules[eleccionJugador].includes(eleccionWord)) console.log("ganaste");
     else console.log("perdiste");   
- 
     
 };
 
-comparador("paper")
+comparador("totuga")
 
 // console.log(rules["paper"]);
 

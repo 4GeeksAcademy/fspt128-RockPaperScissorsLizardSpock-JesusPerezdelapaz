@@ -26,3 +26,13 @@
 // console.log(Object.values(rules)[0][1]);
 // comparador();
 
+const choices = ["rock", "paper", "scissors", "lizard", "spock"]
+const rules = {
+  rock: ['scissors', "lizard"],
+  paper: ["rock", "spock"],
+  scissors: ["paper", "lizard"],
+  lizard: ["spock", "paper"],
+  spock: ["scissors", "rock"]
+}
+
+console.log(choices.includes("morrocoy"));
